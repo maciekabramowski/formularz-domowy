@@ -1,0 +1,60 @@
+
+     <!DOCTYPE html>
+
+     <html lang="en">
+
+     <head>
+
+         <meta charset="UTF-8">
+
+         <title>Formularz</title>
+
+     </head>
+
+     <body>
+
+        <form action="https://formspree.io/witek010@gmail.com"
+      method="POST">
+           
+            <label for="name">Imię:</label><br/>
+            <input type="text" name="name" id="name"><br/>
+            
+            <label for="surname">Nazwisko:</label><br/>
+            <input type="text" name="surname" id="surname"><br/>
+            
+            <label for="email">Email:</label><br/>
+            <input type="email" name="_replyto" id="email"><br/>
+            
+            <label for="phone">Numer telefonu:</label><br/>
+            <input type="text" name="phone" id="phone"><br/>
+            
+            <label for="select">Wybierz miasto:</label><br/>
+            <select name="select" id="">
+                <option value="warszawa">Warszawa</option>
+                <option value="krakow">Kraków</option>
+                <option value="gdansk">Gdańsk</option>
+            </select><br/>
+            
+            <label for="gender">Płeć:</label><br/>
+            <form>
+              <input type="radio" name="gender" value="male" checked> Mężczyzna<br>
+              <input type="radio" name="gender" value="female"> Kobieta<br>
+              <input type="radio" name="gender" value="other"> Inne
+            </form>
+            
+           
+             <input type="checkbox" name="zgoda" value="Bike">Wyrażam zgodę na przetwarzanie danych osobowych.<br>
+
+            
+            
+            <label for="message">Wiadomość:</label><br/>
+            <textarea name="message" id="message" maxlength=“1000”></textarea><br/>
+            <input type="submit" name="submit" value="Wyślij">
+            
+        </form> 
+
+     </body>
+
+     </html>
+
+    
