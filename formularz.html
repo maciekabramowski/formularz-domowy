@@ -1,0 +1,65 @@
+
+     <!DOCTYPE html>
+
+     <html lang="en">
+
+     <head>
+
+         <meta charset="UTF-8">
+
+         <title>Formularz</title>
+
+     </head>
+
+     <body>
+        <h1>A może byś tak zapisał się na szkolenie?</h1>
+
+        <form action="https://formspree.io/witek010@gmail.com"
+      method="POST">
+           
+            <label for="name">Imię:</label><br/>
+            <input type="text" name="name" id="name"><br/>
+            
+            
+            <label for="surname">Nazwisko:</label><br/>
+            <input type="text" name="surname" id="surname"><br/>
+            
+            
+            <label for="email">Email:</label><br/>
+            <input type="email" name="_replyto" id="email"><br/>
+            
+            
+            <label for="phone">Numer telefonu:</label><br/>
+            <input type="text" name="phone" id="phone"><br/>
+            
+            
+            <label for="select">Wybierz miasto:</label><br/>
+            <select name="select" id="select">
+                <option value="warszawa">Warszawa</option>
+                <option value="krakow">Kraków</option>
+                <option value="gdansk">Gdańsk</option>
+            </select><br/>
+            
+            <p>Płeć:</p>          
+            <input type="radio" name="gender" value="male" id="male" checked><label for="male">Mężczyzna</label><br>
+            <input type="radio" name="gender" value="female" id="female"><label for="female">Kobieta</label><br>
+            <label><input type="radio" name="gender" value="other">Inna</label><br/>
+            <br>
+            
+           
+             <input type="checkbox" name="zgoda" value="Bike" id="zgoda"><label for="zgoda">Wyrażam zgodę na przetwarzanie danych osobowych.</label><br>
+            <br>
+            
+            
+            <label for="message">Wiadomość:</label><br/>
+            <textarea name="message" id="message" maxlength=1000></textarea><br/>
+            <br>
+            <input type="submit" name="submit" value="Zapisz się!">
+            
+        </form> 
+
+     </body>
+
+     </html>
+
+    
