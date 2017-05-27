@@ -1,0 +1,51 @@
+body{
+    background-color: #213b50;  
+    color: #fff;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea{
+    background-color: #2b4a64;
+    border: 1px solid #213b50;
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus{
+    border: 2px solid #fff;
+    outline: none;
+    background-color: #4e708c;
+}
+
+label[for*="male"],
+label[for*="zgoda"]{
+    display:inline;
+}
+
+label[for*="message"]{
+    margin-top: 20px;
+}
+
+input[type="submit"]{
+    background-color: #1ac056;
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: 700;
+    cursor: pointer;
+}

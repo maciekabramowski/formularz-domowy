@@ -8,6 +8,8 @@
          <meta charset="UTF-8">
 
          <title>Formularz</title>
+         
+         <link rel="stylesheet" href="css/style.css">
 
      </head>
 
@@ -17,40 +19,46 @@
         <form action="https://formspree.io/witek010@gmail.com"
       method="POST">
            
-            <label for="name">Imię:</label><br/>
-            <input type="text" name="name" id="name"><br/>
+            <label for="name">Imię:</label>
+            <input type="text" name="name" id="name">
             
-            <label for="surname">Nazwisko:</label><br/>
-            <input type="text" name="surname" id="surname"><br/>
             
-            <label for="email">Email:</label><br/>
-            <input type="email" name="_replyto" id="email"><br/>
+            <label for="surname">Nazwisko:</label>
+            <input type="text" name="surname" id="surname">
             
-            <label for="phone">Numer telefonu:</label><br/>
-            <input type="text" name="phone" id="phone"><br/>
             
-            <label for="select">Wybierz miasto:</label><br/>
+            <label for="email">Email:</label>
+            <input type="email" name="_replyto" id="email">
+            
+            
+            <label for="phone">Numer telefonu:</label>
+            <input type="text" name="phone" id="phone">
+            
+            
+            <label for="select">Wybierz miasto:</label>
             <select name="select" id="select">
                 <option value="warszawa">Warszawa</option>
                 <option value="krakow">Kraków</option>
                 <option value="gdansk">Gdańsk</option>
-            </select><br/>
+            </select>
             
-            <label>Płeć:</label><br/>
-            
-              <input type="radio" name="gender" value="male" checked> Mężczyzna<br>
-              <input type="radio" name="gender" value="female"> Kobieta<br>
-              <input type="radio" name="gender" value="other"> Inna <br/>
-            
+            <p>Płeć:</p>          
+            <input type="radio" name="gender" value="male" id="male" checked><label for="male">Mężczyzna</label>
+            <input type="radio" name="gender" value="female" id="female"><label for="female">Kobieta</label>
+            <input type="radio" name="gender" value="other"><label for="othermale">Inna</label>
             
            
-             <input type="checkbox" name="zgoda" value="Bike">Wyrażam zgodę na przetwarzanie danych osobowych.<br>
+            
+            
+            <label for="message">Wiadomość:</label>
+            <textarea rows=7 name="message" id="message" maxlength=10000></textarea><br>
+        
+            <input type="checkbox" name="zgoda" value="Bike" id="zgoda"><label for="zgoda">Wyrażam zgodę na przetwarzanie danych osobowych.</label><br>
 
-            
-            
-            <label for="message">Wiadomość:</label><br/>
-            <textarea name="message" id="message" maxlength=1000></textarea><br/>
+           
             <input type="submit" name="submit" value="Zapisz się!">
+            
+
             
         </form> 
 
